@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>     User Account
+ </title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://127.0.0.1:8000/plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet"
+        href="http://127.0.0.1:8000/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="http://127.0.0.1:8000/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="http://127.0.0.1:8000/plugins/jqvmap/jqvmap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="http://127.0.0.1:8000/dist/css/adminlte.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="http://127.0.0.1:8000/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="http://127.0.0.1:8000/plugins/daterangepicker/daterangepicker.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="http://127.0.0.1:8000/plugins/summernote/summernote-bs4.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+
+    <div class="wrapper">
+
+    <!-- Preloader -->
+    <div class="preloader flex-column justify-content-center align-items-center">
+        <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+    </div>
+
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="http://127.0.0.1:8000/admin/dashboard" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="#" class="nav-link">Contact</a>
+        </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+        <!-- Navbar Search -->
+        <li class="nav-item">
+            <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                <i class="fas fa-search"></i>
+            </a>
+            <div class="navbar-search-block">
+                <form class="form-inline">
+                    <div class="input-group input-group-sm">
+                        <input class="form-control form-control-navbar" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <div class="input-group-append">
+                            <button class="btn btn-navbar" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                            <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                <i class="fas fa-expand-arrows-alt"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+                <i class="fas fa-th-large"></i>
+            </a>
+        </li>
+    </ul>
+</nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <!-- Sidebar -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="http://127.0.0.1:8000/admin/dashboard" class="brand-link">
+        <img src="http://127.0.0.1:8000/dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
+            class="brand-image img-circle elevation-3" style="opacity: .8">
+        <span class="brand-text font-weight-light">P.S Bank</span>
+    </a>
+    <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="image">
+                <img src="http://127.0.0.1:8000/images/1631453980.jpg" class="img-circle elevation-2" alt="User Image">
+            </div>
+            <div class="info">
+                <a href="http://127.0.0.1:8000/logout" class="d-block">Phú Sama</a>
+            </div>
+        </div>
+
+        <!-- SidebarSearch Form -->
+        <div class="form-inline">
+            <div class="input-group" data-widget="sidebar-search">
+                <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-sidebar">
+                        <i class="fas fa-search fa-fw"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
+                <i class="fas fa-users nav-icon"></i>
+                <p>
+                    Customers Management
+                    <i class="right fas "></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:8000/admin/customer-managerment/users" class="nav-link ">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Users i-Banking</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:8000/admin/customer-managerment/customers" class="nav-link ">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Customers</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:8000/admin/customer-managerment/accounts" class="nav-link ">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Accounts Bank</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:8000/admin/customer-managerment/cards" class="nav-link ">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Cards Bank</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:8000/admin/customer-managerment/transactions" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Transactions</p>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <li class="nav-item menu-open">
+                <a href="#" class="nav-link active">
+                    <i class="fas fa-users nav-icon"></i>
+                    <p>
+                        Employees Management
+                        <i class="right fas "></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="http://127.0.0.1:8000/admin/employees/accounts" class="nav-link ">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Employees Account</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://127.0.0.1:8000/admin/employees/employees_info" class="nav-link ">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Employees Info</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://127.0.0.1:8000/admin/employees/position" class="nav-link ">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Position</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+        <!-- /.sidebar-menu -->
+
+
+    </div>
+</aside>
+    <!-- /.sidebar -->
+
+    <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">    Users Table
+</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="http://127.0.0.1:8000/admin/dashboard">Home</a></li>
+                        <li class="breadcrumb-item active">Dashboard</li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+        <div class="card">
+        <div class="card-header">
+            <a href="http://127.0.0.1:8000/admin/customer-managerment/users/create" class="btn btn-primary">Add User</a> <a
+                href="http://127.0.0.1:8000/admin/customer-managerment/users/export" class="btn btn-success">Export Excel</a>
+            <form method="post" action="http://127.0.0.1:8000/admin/customer-managerment/users/search" class="float-right">
+                <input type="hidden" name="_token" value="gRnYsLLXk4MJh2niZiGnJf3OfDEqLzMmjDRNG0ZC">                <div class="input-group
+                input-group-sm" style="width: 180px; padding-top: 4px">
+
+                    <input type=" text" name="keyword" class="form-control float-right" placeholder="Search">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-default">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="card-body">
+                <table id="example1" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Created At</th>
+                    <th>Customer Info</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                                    <tr>
+                        <td>1</td>
+                        <td>Lê Hưng Phú</td>
+                        <td>lehungphu1412@gmail.com</td>
+                        <td>2021-09-08 15:53:39</td>
+                        <td>
+                                                            <a href="http://127.0.0.1:8000/admin/customer-managerment/customers/1/show">Show</a>
+                                                    </td>
+                        <td><a href="http://127.0.0.1:8000/admin/customer-managerment/users/2/edit">Update</a>
+                                                            <a href="http://127.0.0.1:8000/admin/customer-managerment/users/2/destroy"
+                                    onclick="return confirm('Are you sure you want to delete this?')">Delete</a>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <td>2</td>
+                        <td>Nguyễn Tuấn Thành</td>
+                        <td>thanh@gmail.com</td>
+                        <td>2021-09-08 16:05:49</td>
+                        <td>
+                                                            <a href="http://127.0.0.1:8000/admin/customer-managerment/customers/2/show">Show</a>
+                                                    </td>
+                        <td><a href="http://127.0.0.1:8000/admin/customer-managerment/users/3/edit">Update</a>
+                                                            <a href="http://127.0.0.1:8000/admin/customer-managerment/users/3/destroy"
+                                    onclick="return confirm('Are you sure you want to delete this?')">Delete</a>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <td>3</td>
+                        <td>Nguyễn Văn Quốc</td>
+                        <td>quoc@gmail.com</td>
+                        <td>2021-09-08 16:06:50</td>
+                        <td>
+                                                            <a href="http://127.0.0.1:8000/admin/customer-managerment/customers/3/show">Show</a>
+                                                    </td>
+                        <td><a href="http://127.0.0.1:8000/admin/customer-managerment/users/4/edit">Update</a>
+                                                            <a href="http://127.0.0.1:8000/admin/customer-managerment/users/4/destroy"
+                                    onclick="return confirm('Are you sure you want to delete this?')">Delete</a>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <td>4</td>
+                        <td>Phan Hải Nam</td>
+                        <td>phnam@gmail.com</td>
+                        <td>2021-09-17 02:16:12</td>
+                        <td>
+                                                            Chưa liên kết với Customer
+                                                    </td>
+                        <td><a href="http://127.0.0.1:8000/admin/customer-managerment/users/5/edit">Update</a>
+                                                            <a href="http://127.0.0.1:8000/admin/customer-managerment/users/5/destroy"
+                                    onclick="return confirm('Are you sure you want to delete this?')">Delete</a>
+                                                    </td>
+                    </tr>
+                            </tbody>
+        </table>
+
+    </div>
+    </div>
+    <!-- Main content -->
+    <!-- /.content -->
+</div>
+
+    <footer class="main-footer">
+    <div class="text-center"><strong>Copyright &copy; 2014-2021 <a
+                href="https://adminlte.io">PS-Bank.com</a>.</strong>
+        All rights reserved.
+    </div>
+</footer>
+
+<!-- Control Sidebar -->
+<aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+</aside>
+<!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+</body>
+<!-- jQuery -->
+<script src="http://127.0.0.1:8000/plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="http://127.0.0.1:8000/plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+    $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="http://127.0.0.1:8000/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="http://127.0.0.1:8000/plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="http://127.0.0.1:8000/plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="http://127.0.0.1:8000/plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="http://127.0.0.1:8000/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="http://127.0.0.1:8000/plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="http://127.0.0.1:8000/plugins/moment/moment.min.js"></script>
+<script src="http://127.0.0.1:8000/plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="http://127.0.0.1:8000/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="http://127.0.0.1:8000/plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="http://127.0.0.1:8000/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="http://127.0.0.1:8000/dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="http://127.0.0.1:8000/dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="http://127.0.0.1:8000/dist/js/pages/dashboard.js"></script>
+<script src="http://127.0.0.1:8000/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="http://127.0.0.1:8000/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="http://127.0.0.1:8000/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#example1").DataTable({
+            lengthChange: false,
+            initComplete: function() {
+                $(".dataTables_filter").addClass('text-right').remove()
+                $("#example1_paginate .pagination").css('float', 'right')
+            }
+        })
+    });
+</script>
+
+</html>
